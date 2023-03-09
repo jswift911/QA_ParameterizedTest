@@ -7,8 +7,8 @@ public class RestService {
 
         for (int month = 0; month < 12; month++) {
             if (money >= threshold) {
-                money = (money - expenses);
-                money = money - (money - (money / 3));
+                money = money - expenses;
+                money = money / 3;
                 count++;
             } else {
                 money = (money + income) - expenses;
